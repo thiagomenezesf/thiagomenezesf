@@ -13,4 +13,4 @@
 
 ## Estatísticas
 ![Thiago Menezes GitHub stats](https://github-readme-stats.vercel.app/api?username=thiagomenezesf&show_icons=true&theme=transparent)
-[![Top Langs]()
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=thiagomenezesf&langs_count=8&count_private=false&layout=compact&theme=react&hide_border=true&bg_color=0D1117)](https://github.com/thiagomenezesf/github-readme-stats)
