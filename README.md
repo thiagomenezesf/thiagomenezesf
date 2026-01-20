@@ -1,6 +1,6 @@
 ## Olá!! Eu sou o Thiago Menezes 👋
 
-- 🔭 Atualmente estou no 6º semestre de Ciência da Computação no IFSP.
+- 🔭 Atualmente estou no 7º semestre de Ciência da Computação no IFSP.
 - 🌱 Adoro aprender coisas novas e estou sempre dispoto a me desafiar.
 - 👯 Minha intenção é trabalhar no ramo da programação.
 - 📫 Onde me achar: thifrancis1000@gmail.com
