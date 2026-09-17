@@ -17,4 +17,16 @@
 
 ## Estatísticas
 
-![Minhas Estatísticas do GitHub](./github-metrics.svg)
+<div align="center">
+  <table border="0">
+    <tr>
+      <td>
+        <img height="180" src="./github-stats.svg" alt="Thiago Menezes GitHub stats" />
+      </td>
+      <td>
+        <img height="180" src="./github-langs.svg" alt="Top Langs" />
+      </td>
+    </tr>
+  </table>
+</div>
+
