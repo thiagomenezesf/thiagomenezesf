@@ -1,0 +1,28 @@
+name: Metrics
+on:
+  # Atualiza automaticamente todos os dias à meia-noite (UTC)
+  schedule: [{cron: "0 0 * * *"}]
+  # Permite que você force a atualização manualmente pela aba Actions
+  workflow_dispatch:
+  # Atualiza se você fizer alguma alteração direta no código do repositório
+  push: {branches: ["master", "main"]}
+jobs:
+  github-metrics:
+    runs-on: ubuntu-latest
+    environment:
+      name: production
+    permissions:
+      contents: write
+    steps:
+      - uses: lowlighter/metrics@latest
+        with:
+          token: ${{ secrets.METRICS_TOKEN }}
+
+          # Configurações do cartão principal (substitui o seu antigo stats)
+          base: header, activity, community, repositories, metadata
+          
+          # Ativa o plugin de linguagens mais usadas (substitui o seu antigo top-langs)
+          plugin_languages: true
+          plugin_languages_ignored: html, css       # Opcional: ignora linguagens simples
+          plugin_languages_details: bytes-percentage # Mostra em porcentagem
+          plugin_languages_limit: 8                 # Quantidade de linguagens exibidas
