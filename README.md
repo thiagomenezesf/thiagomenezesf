@@ -11,22 +11,21 @@
 ## Redes Sociais
 [![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://instagram.com/mnzsf.thiago/)
 
-## Estatísticas
-![Thiago Menezes GitHub stats](https://github-readme-stats.vercel.app/api?username=thiagomenezesf&show_icons=true&theme=transparent)
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=thiagomenezesf&langs_count=8&count_private=false&layout=compact&theme=react&hide_border=true&bg_color=0D1117)](https://github.com/thiagomenezesf/github-readme-stats) 
-
-## Estatísticas
+## 📊 Estatísticas
 
 <div align="center">
-  <table border="0">
-    <tr>
-      <td>
-        <img height="180" src="./github-stats.svg" alt="Thiago Menezes GitHub stats" />
-      </td>
-      <td>
-        <img height="180" src="./github-langs.svg" alt="Top Langs" />
-      </td>
-    </tr>
-  </table>
+
+  <img width="30%" src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=thiagomenezesf&theme=github_dark" />
+  <img width="30%" src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=thiagomenezesf&theme=github_dark" />
+
+  <br><br>
+
+  <p align="center">
+    <img
+      src="https://raw.githubusercontent.com/thiagomenezesf/thiagomenezesf/output/github-contribution-grid-snake-dark.svg"
+      alt="Contribution Snake"
+    />
+  </p>
+
 </div>
 
