@@ -24,28 +24,18 @@
       />
       <br>
       <img
-        width="70%"
+        width="80%"
         src="./github-langs.svg"
         alt="Top Languages"
       />
     </td>
     <!-- COLUNA DIREITA -->
     <td width="50%" align="center">
-      <picture>
-        <source
-          media="(prefers-color-scheme: dark)"
-          srcset="https://raw.githubusercontent.com/thiagomenezesf/thiagomenezesf/gh-pages/github-contribution-grid-snake-dark.svg"
-        />
-        <source
-          media="(prefers-color-scheme: light)"
-          srcset="https://raw.githubusercontent.com/thiagomenezesf/thiagomenezesf/gh-pages/github-contribution-grid-snake.svg"
-        />
-        <img
-          width="100%"
-          alt="GitHub Contribution Snake"
-          src="https://raw.githubusercontent.com/thiagomenezesf/thiagomenezesf/gh-pages/github-contribution-grid-snake.svg"
-        />
-      </picture>
+      <img
+        width="100%"
+        src="./github-calendar.svg"
+        alt="Calendário de contribuições"
+      />
     </td>
   </tr>
 </table>
