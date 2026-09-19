@@ -1,35 +1,81 @@
-name: Metrics
+name: GitHub Profile Metrics
+
 on:
-  schedule: [{cron: "0 0 * * *"}]
+  schedule:
+    - cron: "0 0 * * *"
+
   workflow_dispatch:
-  push: {branches: ["master", "main"]}
+
+  push:
+    branches:
+      - master
+      - main
+
+permissions:
+  contents: write
+
 jobs:
-  github-metrics:
+  metrics:
     runs-on: ubuntu-latest
     environment:
       name: production
-    permissions:
-      contents: write
+
     steps:
-      # CARTÃO 1: Estatísticas Gerais (Estilo Classic/Clean)
-      - name: Geral Stats
+      # ==========================================
+      # 📊 CARD 1 - Estatísticas gerais
+      # ==========================================
+      - name: GitHub Stats
         uses: lowlighter/metrics@latest
         with:
           token: ${{ secrets.METRICS_TOKEN }}
           filename: github-stats.svg
+
           base: header, activity, community, repositories, metadata
+
           config_timezone: America/Sao_Paulo
-          
-      # CARTÃO 2: Apenas Linguagens Mais Usadas (Estilo Compacto)
-      - name: Top Linguagens
+
+
+      # ==========================================
+      # 💻 CARD 2 - Linguagens
+      # ==========================================
+      - name: Top Languages
         uses: lowlighter/metrics@latest
         with:
           token: ${{ secrets.METRICS_TOKEN }}
           filename: github-langs.svg
-          base: "" # Limpa o cabeçalho padrão para focar apenas nas linguagens
+
+          base: ""
+
           plugin_languages: true
           plugin_languages_ignored: html, css
           plugin_languages_details: bytes-percentage
           plugin_languages_limit: 8
           plugin_languages_sections: most-used
-          plugin_languages_indepth: true # Torna a análise mais precisa
+          plugin_languages_indepth: true
+
+
+  # ==========================================
+  # 🐍 CONTRIBUTION SNAKE
+  # ==========================================
+  snake:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Generate contribution snake
+        uses: Platane/snk/svg-only@v3
+        with:
+          github_user_name: ${{ github.repository_owner }}
+
+          outputs: |
+            dist/github-contribution-grid-snake.svg
+            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
+
+
+      - name: Publish contribution snake
+        uses: crazy-max/ghaction-github-pages@v4
+        with:
+          build_dir: dist
+          branch: output
+
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
