@@ -13,19 +13,45 @@
 
 ## 📊 Estatísticas
 
-<div align="center">
+<table align="center">
+  <tr>
+    <!-- COLUNA ESQUERDA -->
+    <td width="50%" align="center">
+      <img
+        width="80%"
+        src="./github-stats.svg"
+        alt="GitHub Stats"
+      />
+      <br>
+      <img
+        width="70%"
+        src="./github-langs.svg"
+        alt="Top Languages"
+      />
+    </td>
+    <!-- COLUNA DIREITA -->
+    <td width="50%" align="center">
+      <picture>
+        <source
+          media="(prefers-color-scheme: dark)"
+          srcset="https://raw.githubusercontent.com/thiagomenezesf/thiagomenezesf/gh-pages/github-contribution-grid-snake-dark.svg"
+        />
+        <source
+          media="(prefers-color-scheme: light)"
+          srcset="https://raw.githubusercontent.com/thiagomenezesf/thiagomenezesf/gh-pages/github-contribution-grid-snake.svg"
+        />
+        <img
+          width="100%"
+          alt="GitHub Contribution Snake"
+          src="https://raw.githubusercontent.com/thiagomenezesf/thiagomenezesf/gh-pages/github-contribution-grid-snake.svg"
+        />
+      </picture>
+    </td>
+  </tr>
+</table>
 
+<div align="center">
   <img width="30%" src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=thiagomenezesf&theme=github_dark" />
   <img width="30%" src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=thiagomenezesf&theme=github_dark" />
-
-  <br><br>
-
-  <p align="center">
-    <img
-      src="https://raw.githubusercontent.com/thiagomenezesf/thiagomenezesf/output/github-contribution-grid-snake-dark.svg"
-      alt="Contribution Snake"
-    />
-  </p>
-
 </div>
 
