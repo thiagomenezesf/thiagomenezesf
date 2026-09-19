@@ -88,3 +88,6 @@ jobs:
           plugin_calendar: true
           plugin_calendar_limit: 1
           config_timezone: America/Sao_Paulo
+
+      - name: Personalizar calendario
+        run: python .github/scripts/customize_calendar.py
