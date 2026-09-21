@@ -93,6 +93,15 @@ jobs:
           plugin_calendar_limit: 1
           config_timezone: America/Sao_Paulo
 
+      - name: Verificar arquivos
+        run: |
+          echo "Raiz:"
+          ls -la
+          echo ".github:"
+          ls -la .github
+          echo ".github/scripts:"
+          ls -la .github/scripts
+
       - name: Personalizar calendario
         run: python .github/scripts/customize_calendar.py
 
